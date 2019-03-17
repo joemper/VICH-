@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name speedy-rescue)(type Legacy)(uri ${KIPRJMOD}/speedy-rescue.lib)(options "")(descr ""))
+  (lib (name LD1085V50)(type Legacy)(uri ${KIPRJMOD}/conTE42.pretty/LD1085V50.lib)(options "")(descr ""))
+)
