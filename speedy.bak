@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:speedy-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1591,17 +1591,6 @@ Text GLabel 13750 3100 0    60   Input ~ 0
 Text GLabel 13750 3200 0    60   Input ~ 0
 GND
 $Comp
-L LD1085V50:LD1085V50 U1
-U 1 1 5AA1499A
-P 9600 6100
-F 0 "U1" H 9300 6350 50  0000 C CNN
-F 1 "LD1085V50" H 9600 6300 50  0000 C CNN
-F 2 "conTE42:TO-220-LongPads" H 9600 6200 50  0001 C CIN
-F 3 "" H 9600 6100 50  0001 C CNN
-	1    9600 6100
-	1    0    0    -1  
-$EndComp
-$Comp
 L speedy-rescue:R R70
 U 1 1 5AA1C246
 P 8350 5550
@@ -1612,8 +1601,6 @@ F 3 "" H 8350 5550 50  0001 C CNN
 	1    8350 5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10050 6050 10250 6050
 Connection ~ 10250 6050
 Connection ~ 10500 6050
 Connection ~ 10800 6050
@@ -3001,8 +2988,6 @@ Wire Wire Line
 Wire Wire Line
 	8800 6050 8950 6050
 Wire Wire Line
-	9050 6050 9150 6050
-Wire Wire Line
 	9600 6400 10050 6400
 Wire Wire Line
 	12650 7000 12650 7150
@@ -3705,7 +3690,7 @@ L speedy-rescue:R R60
 U 1 1 5A23669D
 P 7350 5500
 F 0 "R60" V 7450 5500 50  0000 C CNN
-F 1 "8.2M" V 7350 5500 50  0000 C CNN
+F 1 "5.6M" V 7350 5500 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7280 5500 50  0001 C CNN
 F 3 "" H 7350 5500 50  0001 C CNN
 	1    7350 5500
@@ -3727,4 +3712,21 @@ Wire Wire Line
 	7800 5800 7800 5700
 Wire Wire Line
 	7800 5300 8350 5300
+$Comp
+L Regulator_Linear:LM78M05_TO252 U1
+U 1 1 5C957EA1
+P 9600 6050
+F 0 "U1" H 9600 6292 50  0000 C CNN
+F 1 "L4940-5V" H 9600 6201 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 9600 6275 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM78M05.pdf" H 9600 6000 50  0001 C CNN
+	1    9600 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 6050 10250 6050
+Wire Wire Line
+	9050 6050 9300 6050
+Wire Wire Line
+	9600 6350 9600 6400
 $EndSCHEMATC

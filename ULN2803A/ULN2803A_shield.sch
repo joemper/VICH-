@@ -42,18 +42,12 @@ F 3 "" H 6850 4500 50  0001 C CNN
 $EndComp
 Text GLabel 6250 3950 2    60   Input ~ 0
 AUX-OUT1
-Text GLabel 6250 3750 2    60   Input ~ 0
-AUX-OUT2
-Text GLabel 6250 4150 2    60   Input ~ 0
-AUX-OUT3
 Text GLabel 5700 5250 3    60   Input ~ 0
 GND
-Text GLabel 7750 4400 2    60   Input ~ 0
-RPM-METER
 Text GLabel 6000 5250 3    60   Input ~ 0
-AUX-OUT3
+ULN-BOOST-OUT
 Text GLabel 5900 5250 3    60   Input ~ 0
-AUX-OUT2
+ULN-FAN-OUT
 Text GLabel 5800 5250 3    60   Input ~ 0
 AUX-OUT1
 Wire Wire Line
@@ -98,16 +92,14 @@ $EndComp
 Wire Wire Line
 	6600 4950 7300 4950
 Text GLabel 6200 5250 3    60   Input ~ 0
-RPM-METER
+ULN-TACH-OUT
 Wire Wire Line
 	6250 4400 7300 4400
 Wire Wire Line
 	7300 4400 7300 4550
 Connection ~ 7300 4400
-Text GLabel 6250 4300 2    60   Input ~ 0
-AUX-OUT4
 Text GLabel 6100 5250 3    60   Input ~ 0
-AUX-OUT4
+ULN-FP-OUT
 Wire Wire Line
 	6650 4600 6600 4600
 Wire Wire Line
@@ -187,4 +179,12 @@ Wire Wire Line
 	7300 4400 7750 4400
 Wire Wire Line
 	6600 4600 6500 4600
+Text GLabel 6250 3750 2    60   Input ~ 0
+ULN-FAN-OUT
+Text GLabel 6250 4150 2    60   Input ~ 0
+ULN-BOOST-OUT
+Text GLabel 6250 4300 2    60   Input ~ 0
+ULN-FP-OUT
+Text GLabel 7750 4400 2    60   Input ~ 0
+ULN-TACH-OUT
 $EndSCHEMATC

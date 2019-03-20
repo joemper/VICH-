@@ -40,9 +40,9 @@ F 3 "" H 6850 4500 50  0001 C CNN
 	1    6850 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 6250 3750 2    60   Input ~ 0
-AUX-OUT1
 Text GLabel 6250 3950 2    60   Input ~ 0
+AUX-OUT1
+Text GLabel 6250 3750 2    60   Input ~ 0
 AUX-OUT2
 Text GLabel 6250 4150 2    60   Input ~ 0
 AUX-OUT3

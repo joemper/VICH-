@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector:Conn_01x05_Female
+# Connector_Conn_01x05_Female
 #
-DEF Connector:Conn_01x05_Female J 0 40 Y N 1 F N
+DEF Connector_Conn_01x05_Female J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "Connector:Conn_01x05_Female" 0 -300 50 H V C CNN
+F1 "Connector_Conn_01x05_Female" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -30,11 +30,11 @@ X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Battery
+# Device_Battery
 #
-DEF Device:Battery BT 0 0 N N 1 F N
+DEF Device_Battery BT 0 0 N N 1 F N
 F0 "BT" 100 100 50 H V L CNN
-F1 "Device:Battery" 100 0 50 H V L CNN
+F1 "Device_Battery" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -55,11 +55,11 @@ X - 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:D
+# Device_D
 #
-DEF Device:D D 0 40 N N 1 F N
+DEF Device_D D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:D" 0 -100 50 H V C CNN
+F1 "Device_D" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -77,11 +77,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Fuse
+# Device_Fuse
 #
-DEF Device:Fuse F 0 0 N Y 1 F N
+DEF Device_Fuse F 0 0 N Y 1 F N
 F0 "F" 80 0 50 V V C CNN
-F1 "Device:Fuse" -75 0 50 V V C CNN
+F1 "Device_Fuse" -75 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -95,11 +95,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -112,11 +112,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper:SolderJumper_3_Bridged123
+# Jumper_SolderJumper_3_Bridged123
 #
-DEF Jumper:SolderJumper_3_Bridged123 JP 0 0 Y N 1 F N
+DEF Jumper_SolderJumper_3_Bridged123 JP 0 0 Y N 1 F N
 F0 "JP" -100 -100 50 H V C CNN
-F1 "Jumper:SolderJumper_3_Bridged123" 0 110 50 H V C CNN
+F1 "Jumper_SolderJumper_3_Bridged123" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -141,29 +141,30 @@ X B 3 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LD1085V50:LD1085V50
+# Regulator_Linear_LM78M05_TO252
 #
-DEF LD1085V50:LD1085V50 U 0 40 Y Y 1 F N
-F0 "U" -300 250 50 H V C CNN
-F1 "LD1085V50:LD1085V50" 0 200 50 H V C CNN
-F2 "TO_SOT_Packages_SMD:SOT-23" 0 100 50 H I C CIN
-F3 "" 0 0 50 H I C CNN
+DEF Regulator_Linear_LM78M05_TO252 U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "Regulator_Linear_LM78M05_TO252" 0 125 50 H V L CNN
+F2 "Package_TO_SOT_SMD:TO-252-2" 0 225 50 H I C CIN
+F3 "" 0 -50 50 H I C CNN
+ALIAS MC78M05_TO252 KA78M05_TO252 LF15_TO252 LF18_TO252 LF25_TO252 LF33_TO252 LF50_TO252 LF60_TO252 LF80_TO252 LF85_TO252 LF120_TO252 LP2950-3.0_TO252 LP2950-3.3_TO252 LP2950-5.0_TO252 LF47_TO252 LF90_TO252
 $FPLIST
- SOT*
+ TO?252*
 $ENDFPLIST
 DRAW
-S -300 150 300 -200 0 1 10 f
-X GND 1 0 -300 100 U 40 40 1 1 W
-X VOUT 2 450 50 150 L 40 40 1 1 w
-X VIN 3 -450 50 150 R 40 40 1 1 I
+S -200 75 200 -200 0 1 10 f
+X VI 1 -300 0 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X VO 3 300 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# Relay:DIPxx-1Axx-11x
+# Relay_DIPxx-1Axx-11x
 #
-DEF Relay:DIPxx-1Axx-11x K 0 40 Y Y 1 F N
+DEF Relay_DIPxx-1Axx-11x K 0 40 Y Y 1 F N
 F0 "K" 350 150 50 H V L CNN
-F1 "Relay:DIPxx-1Axx-11x" 350 50 50 H V L CNN
+F1 "Relay_DIPxx-1Axx-11x" 350 50 50 H V L CNN
 F2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" 350 -50 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -194,11 +195,11 @@ X ~ 8 200 300 100 D 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #
-# Transistor_BJT:BC547
+# Transistor_BJT_BC547
 #
-DEF Transistor_BJT:BC547 Q 0 0 Y N 1 F N
+DEF Transistor_BJT_BC547 Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "Transistor_BJT:BC547" 200 0 50 H V L CNN
+F1 "Transistor_BJT_BC547" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-92_Inline" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 ALIAS BC546 BC548 BC549 BC550 BC337 BC338
@@ -218,11 +219,11 @@ X E 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Transistor_FET:TP0610L
+# Transistor_FET_TP0610L
 #
-DEF Transistor_FET:TP0610L Q 0 0 Y N 1 F N
+DEF Transistor_FET_TP0610L Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "Transistor_FET:TP0610L" 200 0 50 H V L CNN
+F1 "Transistor_FET_TP0610L" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-92_Inline" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 ALIAS TP0610L VP0610L
@@ -254,11 +255,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -267,11 +268,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:ARDUINO_MEGA_SHIELD
+# speedy-rescue_ARDUINO_MEGA_SHIELD
 #
-DEF speedy-rescue:ARDUINO_MEGA_SHIELD SHIELD 0 40 Y Y 1 F N
+DEF speedy-rescue_ARDUINO_MEGA_SHIELD SHIELD 0 40 Y Y 1 F N
 F0 "SHIELD" -400 2500 60 H V C CNN
-F1 "speedy-rescue:ARDUINO_MEGA_SHIELD" -100 -2700 60 H V C CNN
+F1 "speedy-rescue_ARDUINO_MEGA_SHIELD" -100 -2700 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -364,11 +365,11 @@ X V_IN V_IN -1000 1450 300 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:BS170-RESCUE-speedy
+# speedy-rescue_BS170-RESCUE-speedy
 #
-DEF speedy-rescue:BS170-RESCUE-speedy Q 0 0 Y N 1 F N
+DEF speedy-rescue_BS170-RESCUE-speedy Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "speedy-rescue:BS170-RESCUE-speedy" 200 0 50 H V L CNN
+F1 "speedy-rescue_BS170-RESCUE-speedy" 200 0 50 H V L CNN
 F2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -398,11 +399,11 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:C
+# speedy-rescue_C
 #
-DEF speedy-rescue:C C 0 10 N Y 1 F N
+DEF speedy-rescue_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "speedy-rescue:C" 25 -100 50 H V L CNN
+F1 "speedy-rescue_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -416,11 +417,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:CONN_01X02
+# speedy-rescue_CONN_01X02
 #
-DEF speedy-rescue:CONN_01X02 J 0 40 Y N 1 F N
+DEF speedy-rescue_CONN_01X02 J 0 40 Y N 1 F N
 F0 "J" 0 150 50 H V C CNN
-F1 "speedy-rescue:CONN_01X02" 100 0 50 V V C CNN
+F1 "speedy-rescue_CONN_01X02" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -438,11 +439,11 @@ X P2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:CONN_01X05
+# speedy-rescue_CONN_01X05
 #
-DEF speedy-rescue:CONN_01X05 J 0 40 Y N 1 F N
+DEF speedy-rescue_CONN_01X05 J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "speedy-rescue:CONN_01X05" 100 0 50 V V C CNN
+F1 "speedy-rescue_CONN_01X05" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -466,11 +467,11 @@ X P5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:CONN_01X26
+# speedy-rescue_CONN_01X26
 #
-DEF speedy-rescue:CONN_01X26 J 0 40 Y N 1 F N
+DEF speedy-rescue_CONN_01X26 J 0 40 Y N 1 F N
 F0 "J" 0 1350 50 H V C CNN
-F1 "speedy-rescue:CONN_01X26" 100 0 50 V V C CNN
+F1 "speedy-rescue_CONN_01X26" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -536,11 +537,11 @@ X P9 9 -200 450 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:CP
+# speedy-rescue_CP
 #
-DEF speedy-rescue:CP C 0 10 N Y 1 F N
+DEF speedy-rescue_CP C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "speedy-rescue:CP" 25 -100 50 H V L CNN
+F1 "speedy-rescue_CP" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -559,11 +560,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:Conn_01x01
+# speedy-rescue_Conn_01x01
 #
-DEF speedy-rescue:Conn_01x01 J 0 40 Y N 1 F N
+DEF speedy-rescue_Conn_01x01 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "speedy-rescue:Conn_01x01" 0 -100 50 H V C CNN
+F1 "speedy-rescue_Conn_01x01" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -581,11 +582,11 @@ X Pin_1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:Conn_01x02
+# speedy-rescue_Conn_01x02
 #
-DEF speedy-rescue:Conn_01x02 J 0 40 Y N 1 F N
+DEF speedy-rescue_Conn_01x02 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "speedy-rescue:Conn_01x02" 0 -200 50 H V C CNN
+F1 "speedy-rescue_Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -605,11 +606,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:Conn_01x03
+# speedy-rescue_Conn_01x03
 #
-DEF speedy-rescue:Conn_01x03 J 0 40 Y N 1 F N
+DEF speedy-rescue_Conn_01x03 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "speedy-rescue:Conn_01x03" 0 -200 50 H V C CNN
+F1 "speedy-rescue_Conn_01x03" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -631,11 +632,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:Conn_01x04
+# speedy-rescue_Conn_01x04
 #
-DEF speedy-rescue:Conn_01x04 J 0 40 Y N 1 F N
+DEF speedy-rescue_Conn_01x04 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "speedy-rescue:Conn_01x04" 0 -300 50 H V C CNN
+F1 "speedy-rescue_Conn_01x04" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -659,11 +660,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:Conn_01x04_Female
+# speedy-rescue_Conn_01x04_Female
 #
-DEF speedy-rescue:Conn_01x04_Female J 0 40 Y N 1 F N
+DEF speedy-rescue_Conn_01x04_Female J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "speedy-rescue:Conn_01x04_Female" 0 -300 50 H V C CNN
+F1 "speedy-rescue_Conn_01x04_Female" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -688,11 +689,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:Conn_01x06
+# speedy-rescue_Conn_01x06
 #
-DEF speedy-rescue:Conn_01x06 J 0 40 Y N 1 F N
+DEF speedy-rescue_Conn_01x06 J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "speedy-rescue:Conn_01x06" 0 -400 50 H V C CNN
+F1 "speedy-rescue_Conn_01x06" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -720,11 +721,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:Conn_02x04_Counter_Clockwise
+# speedy-rescue_Conn_02x04_Counter_Clockwise
 #
-DEF speedy-rescue:Conn_02x04_Counter_Clockwise J 0 40 Y N 1 F N
+DEF speedy-rescue_Conn_02x04_Counter_Clockwise J 0 40 Y N 1 F N
 F0 "J" 50 200 50 H V C CNN
-F1 "speedy-rescue:Conn_02x04_Counter_Clockwise" 50 -300 50 H V C CNN
+F1 "speedy-rescue_Conn_02x04_Counter_Clockwise" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -752,11 +753,11 @@ X Pin_8 8 300 100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:Conn_02x06_Top_Bottom
+# speedy-rescue_Conn_02x06_Top_Bottom
 #
-DEF speedy-rescue:Conn_02x06_Top_Bottom J 0 40 Y N 1 F N
+DEF speedy-rescue_Conn_02x06_Top_Bottom J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "speedy-rescue:Conn_02x06_Top_Bottom" 50 -400 50 H V C CNN
+F1 "speedy-rescue_Conn_02x06_Top_Bottom" 50 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -792,11 +793,11 @@ X Pin_9 9 300 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:Conn_02x21_Counter_Clockwise
+# speedy-rescue_Conn_02x21_Counter_Clockwise
 #
-DEF speedy-rescue:Conn_02x21_Counter_Clockwise J 0 40 Y N 1 F N
+DEF speedy-rescue_Conn_02x21_Counter_Clockwise J 0 40 Y N 1 F N
 F0 "J" 50 1100 50 H V C CNN
-F1 "speedy-rescue:Conn_02x21_Counter_Clockwise" 50 -1100 50 H V C CNN
+F1 "speedy-rescue_Conn_02x21_Counter_Clockwise" 50 -1100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -892,11 +893,11 @@ X Pin_9 9 -200 200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:D
+# speedy-rescue_D
 #
-DEF speedy-rescue:D D 0 40 N N 1 F N
+DEF speedy-rescue_D D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "speedy-rescue:D" 0 -100 50 H V C CNN
+F1 "speedy-rescue_D" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -915,11 +916,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:D_Schottky
+# speedy-rescue_D_Schottky
 #
-DEF speedy-rescue:D_Schottky D 0 40 N N 1 F N
+DEF speedy-rescue_D_Schottky D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "speedy-rescue:D_Schottky" 0 -100 50 H V C CNN
+F1 "speedy-rescue_D_Schottky" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -938,11 +939,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:D_TVS_ALT
+# speedy-rescue_D_TVS_ALT
 #
-DEF speedy-rescue:D_TVS_ALT D 0 40 N N 1 F N
+DEF speedy-rescue_D_TVS_ALT D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "speedy-rescue:D_TVS_ALT" 0 -100 50 H V C CNN
+F1 "speedy-rescue_D_TVS_ALT" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -962,11 +963,11 @@ X A2 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:LED
+# speedy-rescue_LED
 #
-DEF speedy-rescue:LED D 0 40 Y N 1 F N
+DEF speedy-rescue_LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "speedy-rescue:LED" 0 -100 50 H V C CNN
+F1 "speedy-rescue_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -983,11 +984,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# speedy-rescue:R
+# speedy-rescue_R
 #
-DEF speedy-rescue:R R 0 0 N Y 1 F N
+DEF speedy-rescue_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "speedy-rescue:R" 0 0 50 V V C CNN
+F1 "speedy-rescue_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
