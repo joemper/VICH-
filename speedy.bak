@@ -1164,7 +1164,7 @@ $EndComp
 Text GLabel 2100 1600 2    60   Input ~ 0
 5V
 Text GLabel 2100 1700 2    60   Input ~ 0
-GND
+ULN-BOOST-OUT
 Text GLabel 6250 1800 2    60   Input ~ 0
 INJ5-CPU-D11
 Text GLabel 6250 1600 2    60   Input ~ 0
@@ -1175,17 +1175,6 @@ Text GLabel 2350 9550 0    60   Input ~ 0
 4-6-INJ-D&R
 Text GLabel 2350 10950 0    60   Input ~ 0
 4-6-INJ-D&R
-$Comp
-L speedy-rescue:Conn_02x06_Top_Bottom SHIELD2
-U 1 1 5A5531E6
-P 7700 11650
-F 0 "SHIELD2" H 7750 11950 50  0000 C CNN
-F 1 "ULN_SHIELD" H 7750 11250 50  0000 C CNN
-F 2 "conTE42:ULN_SHIELD" H 7700 11650 50  0001 C CNN
-F 3 "" H 7700 11650 50  0001 C CNN
-	1    7700 11650
-	1    0    0    -1  
-$EndComp
 Text GLabel 7500 11550 0    60   Input ~ 0
 ULN-AUX-OUT1
 Text GLabel 7500 11650 0    60   Input ~ 0
@@ -1195,7 +1184,7 @@ ULN-TACH-OUT
 Text GLabel 7500 11850 0    60   Input ~ 0
 ULN-FP-OUT
 Text GLabel 7500 11750 0    60   Input ~ 0
-ULN-BOOST-OUT
+ULN-FAN2-OUT
 Text GLabel 7500 11450 0    60   Input ~ 0
 GND
 Text GLabel 8000 11750 2    60   Input ~ 0
@@ -1203,11 +1192,11 @@ ULN-TACH
 Text GLabel 8000 11450 2    60   Input ~ 0
 PWR
 Text GLabel 8000 11550 2    60   Input ~ 0
-ULN-AUX3
+ULN-FAN2
 Text GLabel 8000 11650 2    60   Input ~ 0
-ULN-AUX4
+ULN-FP
 Text GLabel 8000 11850 2    60   Input ~ 0
-ULN-AUX2
+ULN-FAN
 Text GLabel 8000 11950 2    60   Input ~ 0
 ULN-AUX1
 Text GLabel 2100 1800 2    60   Input ~ 0
@@ -1540,13 +1529,13 @@ $EndComp
 Text GLabel 4350 4700 0    60   Input ~ 0
 ULN-AUX1
 Text GLabel 4350 4900 0    60   Input ~ 0
-ULN-AUX2
+ULN-FAN
 Text GLabel 4350 5150 0    60   Input ~ 0
 ULN-TACH
 Text GLabel 4350 5350 0    60   Input ~ 0
-ULN-AUX4
+ULN-FP
 Text GLabel 4350 5250 0    60   Input ~ 0
-ULN-AUX3
+ULN-FAN2
 Text GLabel 6250 4900 2    60   Input ~ 0
 IGN1-D27
 Text GLabel 6250 5100 2    60   Input ~ 0
@@ -2132,27 +2121,6 @@ Text GLabel 13000 4200 2    60   Input ~ 0
 AD11
 Text GLabel 13000 4300 2    60   Input ~ 0
 AD10
-$Comp
-L speedy-rescue:CONN_01X05 J4
-U 1 1 5AA317DB
-P 11950 5550
-F 0 "J4" H 11950 5850 50  0000 C CNN
-F 1 "CONN_01X05" V 12050 5550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 11950 5550 50  0001 C CNN
-F 3 "" H 11950 5550 50  0001 C CNN
-	1    11950 5550
-	-1   0    0    1   
-$EndComp
-Text GLabel 12150 5350 2    60   Input ~ 0
-AD13
-Text GLabel 12150 5450 2    60   Input ~ 0
-AD12
-Text GLabel 12150 5550 2    60   Input ~ 0
-AD11
-Text GLabel 12150 5650 2    60   Input ~ 0
-AD10
-Text GLabel 12150 5750 2    60   Input ~ 0
-AD9
 Text GLabel 4350 3800 0    60   Input ~ 0
 AD12
 Text GLabel 4350 3600 0    60   Input ~ 0
@@ -3524,8 +3492,6 @@ Wire Wire Line
 	15800 6700 16000 6700
 Text GLabel 4350 3200 0    50   Input ~ 0
 AUX1-CPU
-Text GLabel 1050 750  0    50   Input ~ 0
-AUX-CS-OUT1
 Text GLabel 2100 1200 2    50   Input ~ 0
 VVT-OUT
 Wire Wire Line
@@ -3698,10 +3664,10 @@ F 3 "" H 7350 5500 50  0001 C CNN
 $EndComp
 Connection ~ 8350 5300
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5C9153AE
 P 7800 5800
-F 0 "#PWR?" H 7800 5550 50  0001 C CNN
+F 0 "#PWR0103" H 7800 5550 50  0001 C CNN
 F 1 "GND" H 7805 5627 50  0000 C CNN
 F 2 "" H 7800 5800 50  0001 C CNN
 F 3 "" H 7800 5800 50  0001 C CNN
@@ -3718,7 +3684,7 @@ U 1 1 5C957EA1
 P 9600 6050
 F 0 "U1" H 9600 6292 50  0000 C CNN
 F 1 "L4940-5V" H 9600 6201 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 9600 6275 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9600 6275 50  0001 C CIN
 F 3 "http://www.fairchildsemi.com/ds/LM/LM78M05.pdf" H 9600 6000 50  0001 C CNN
 	1    9600 6050
 	1    0    0    -1  
@@ -3729,4 +3695,21 @@ Wire Wire Line
 	9050 6050 9300 6050
 Wire Wire Line
 	9600 6350 9600 6400
+$Comp
+L Connector_Generic:Conn_02x07_Top_Bottom ULN-SHIELD1
+U 1 1 5C977E58
+P 7700 11750
+F 0 "ULN-SHIELD1" H 7750 12267 50  0000 C CNN
+F 1 "SHIELD2" H 7750 12176 50  0000 C CNN
+F 2 "conTE42:ULN_SHIELD" H 7700 11750 50  0001 C CNN
+F 3 "~" H 7700 11750 50  0001 C CNN
+	1    7700 11750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 12050 0    60   Input ~ 0
+ULN-BOOST-OUT
+Text GLabel 8000 12050 2    60   Input ~ 0
+ULN-BOOST
+Text GLabel 4350 4800 0    50   Input ~ 0
+ULN-BOOST
 $EndSCHEMATC

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ULN2803A_shield-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -41,15 +41,15 @@ F 3 "" H 6850 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6250 3950 2    60   Input ~ 0
-AUX-OUT1
+ULN-AUX1-OUT
 Text GLabel 5700 5250 3    60   Input ~ 0
 GND
 Text GLabel 6000 5250 3    60   Input ~ 0
-ULN-BOOST-OUT
+ULN-FAN2-OUT
 Text GLabel 5900 5250 3    60   Input ~ 0
 ULN-FAN-OUT
 Text GLabel 5800 5250 3    60   Input ~ 0
-AUX-OUT1
+ULN-AUX1-OUT
 Wire Wire Line
 	5750 3700 5750 3750
 Wire Wire Line
@@ -107,28 +107,6 @@ Wire Wire Line
 Connection ~ 6600 4600
 Text GLabel 6500 4600 0    60   Input ~ 0
 12V
-$Comp
-L ULN2803A_shield-rescue:Conn_01x06 J1
-U 1 1 5A5504E5
-P 5850 2900
-F 0 "J1" H 5850 3200 50  0000 C CNN
-F 1 "Conn_01x06" H 5850 2500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 5850 2900 50  0001 C CNN
-F 3 "" H 5850 2900 50  0001 C CNN
-	1    5850 2900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ULN2803A_shield-rescue:Conn_01x06 J2
-U 1 1 5A550551
-P 5900 5050
-F 0 "J2" H 5900 5350 50  0000 C CNN
-F 1 "Conn_01x06" H 5900 4650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 5900 5050 50  0001 C CNN
-F 3 "" H 5900 5050 50  0001 C CNN
-	1    5900 5050
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6150 3100 6150 3550
 Wire Wire Line
@@ -182,9 +160,97 @@ Wire Wire Line
 Text GLabel 6250 3750 2    60   Input ~ 0
 ULN-FAN-OUT
 Text GLabel 6250 4150 2    60   Input ~ 0
-ULN-BOOST-OUT
+ULN-FAN2-OUT
 Text GLabel 6250 4300 2    60   Input ~ 0
 ULN-FP-OUT
 Text GLabel 7750 4400 2    60   Input ~ 0
 ULN-TACH-OUT
+$Comp
+L Device:Q_NMOS_DGS Q1
+U 1 1 5C944AE1
+P 8550 3650
+F 0 "Q1" H 8756 3696 50  0000 L CNN
+F 1 "DMN3023L" H 8756 3605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8750 3750 50  0001 C CNN
+F 3 "~" H 8550 3650 50  0001 C CNN
+	1    8550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R101
+U 1 1 5C945661
+P 8050 3900
+F 0 "R101" H 8120 3946 50  0000 L CNN
+F 1 "100k" H 8120 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7980 3900 50  0001 C CNN
+F 3 "~" H 8050 3900 50  0001 C CNN
+	1    8050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R100
+U 1 1 5C946B78
+P 7850 3650
+F 0 "R100" V 7643 3650 50  0000 C CNN
+F 1 "1k" V 7734 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7780 3650 50  0001 C CNN
+F 3 "~" H 7850 3650 50  0001 C CNN
+	1    7850 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 3650 8050 3650
+Wire Wire Line
+	8050 3750 8050 3650
+Connection ~ 8050 3650
+Wire Wire Line
+	8050 3650 8350 3650
+$Comp
+L power:GND #PWR0101
+U 1 1 5C948708
+P 8050 4050
+F 0 "#PWR0101" H 8050 3800 50  0001 C CNN
+F 1 "GND" H 8055 3877 50  0000 C CNN
+F 2 "" H 8050 4050 50  0001 C CNN
+F 3 "" H 8050 4050 50  0001 C CNN
+	1    8050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x07_Male J1
+U 1 1 5C94DD8D
+P 5950 2900
+F 0 "J1" V 5785 2878 50  0000 C CNN
+F 1 "Conn_01x07_Male" V 5876 2878 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 5950 2900 50  0001 C CNN
+F 3 "~" H 5950 2900 50  0001 C CNN
+	1    5950 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x07_Male J2
+U 1 1 5C95E4FA
+P 6000 5050
+F 0 "J2" V 5835 5028 50  0000 C CNN
+F 1 "Conn_01x07_Male" V 5926 5028 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 6000 5050 50  0001 C CNN
+F 3 "~" H 6000 5050 50  0001 C CNN
+	1    6000 5050
+	0    1    1    0   
+$EndComp
+Text GLabel 6300 5250 3    60   Input ~ 0
+ULN-BOOST-OUT
+Text GLabel 8650 3150 2    60   Input ~ 0
+ULN-BOOST-OUT
+Wire Wire Line
+	8050 4050 8650 4050
+Wire Wire Line
+	8650 4050 8650 3850
+Connection ~ 8050 4050
+Wire Wire Line
+	8650 3150 8650 3450
+Wire Wire Line
+	6250 3100 7700 3100
+Wire Wire Line
+	7700 3100 7700 3650
 $EndSCHEMATC
