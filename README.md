@@ -20,3 +20,4 @@
  * Barro 
  * Tacho out (coil can be populated).
  
+<img src=vich.png>
