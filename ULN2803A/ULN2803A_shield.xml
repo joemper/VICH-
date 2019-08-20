@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/jp/Documents/KiCad/vich/ULN2803A/ULN2803A_shield.sch</source>
+    <date>lör 10 aug 2019 13:54:07</date>
+    <tool>Eeschema 5.1.4-e60b266~84~ubuntu19.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ULN2803A_shield.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="IC1">
+      <value>ULN2803A</value>
+      <footprint>Housings_DIP:DIP-18_W7.62mm_LongPads</footprint>
+      <libsource lib="ULN2803A_shield-rescue" part="Conn_02x09_Counter_Clockwise" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A54EB0D</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>JP2</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="ULN2803A_shield-rescue" part="Conn_01x02" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A54F43C</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>L</value>
+      <footprint>Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal</footprint>
+      <libsource lib="ULN2803A_shield-rescue" part="L" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A550CF1</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>JP1</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="ULN2803A_shield-rescue" part="Conn_01x02" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A550FDB</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>DMN3023L</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_DGS" description="N-MOSFET transistor, drain/gate/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C944AE1</tstamp>
+    </comp>
+    <comp ref="R101">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C945661</tstamp>
+    </comp>
+    <comp ref="R100">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C946B78</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x07_Male</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x07_Male" description="Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C94DD8D</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x07_Male</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x07_Male" description="Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C95E4FA</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x07_Male">
+      <description>Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x07_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_DGS">
+      <description>N-MOSFET transistor, drain/gate/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_DGS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ULN2803A_shield-rescue" part="Conn_01x02">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ULN2803A_shield-rescue" part="Conn_02x09_Counter_Clockwise">
+      <footprints>
+        <fp>Connector*:*2x??x*mm*</fp>
+        <fp>Connector*:*2x???Pitch*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x09_Counter_Clockwise</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ULN2803A_shield-rescue" part="L">
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="ULN2803A_shield-rescue">
+      <uri>/home/jp/Documents/KiCad/vich/ULN2803A/ULN2803A_shield-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(IC1-Pad5)">
+      <node ref="IC1" pin="5"/>
+      <node ref="J1" pin="6"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="J2" pin="7"/>
+      <node ref="IC1" pin="9"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="R101" pin="2"/>
+    </net>
+    <net code="3" name="Net-(Q1-Pad2)">
+      <node ref="R100" pin="1"/>
+      <node ref="R101" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="4" name="ULN-BOOST-OUT">
+      <node ref="J2" pin="1"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="5" name="Net-(IC1-Pad1)">
+      <node ref="J1" pin="2"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="IC1" pin="2"/>
+    </net>
+    <net code="6" name="Net-(IC1-Pad3)">
+      <node ref="IC1" pin="4"/>
+      <node ref="IC1" pin="3"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="7" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="R100" pin="2"/>
+    </net>
+    <net code="8" name="Net-(IC1-Pad7)">
+      <node ref="J1" pin="5"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="9" name="Net-(IC1-Pad8)">
+      <node ref="IC1" pin="8"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="10" name="ULN-AUX1-OUT">
+      <node ref="IC1" pin="16"/>
+      <node ref="IC1" pin="15"/>
+      <node ref="J2" pin="6"/>
+    </net>
+    <net code="11" name="12V">
+      <node ref="J1" pin="7"/>
+      <node ref="L1" pin="2"/>
+      <node ref="JP2" pin="2"/>
+    </net>
+    <net code="12" name="ULN-FAN-OUT">
+      <node ref="IC1" pin="17"/>
+      <node ref="IC1" pin="18"/>
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="13" name="ULN-FAN2-OUT">
+      <node ref="J2" pin="4"/>
+      <node ref="IC1" pin="13"/>
+      <node ref="IC1" pin="14"/>
+    </net>
+    <net code="14" name="ULN-FP-OUT">
+      <node ref="J2" pin="3"/>
+      <node ref="IC1" pin="12"/>
+    </net>
+    <net code="15" name="ULN-TACH-OUT">
+      <node ref="JP1" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="IC1" pin="11"/>
+    </net>
+    <net code="16" name="Net-(IC1-Pad10)">
+      <node ref="JP2" pin="1"/>
+      <node ref="IC1" pin="10"/>
+    </net>
+    <net code="17" name="Net-(JP1-Pad2)">
+      <node ref="JP1" pin="2"/>
+      <node ref="L1" pin="1"/>
+    </net>
+  </nets>
+</export>

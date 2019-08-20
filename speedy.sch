@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:speedy-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -3141,8 +3141,8 @@ Wire Wire Line
 	16350 9800 16350 10100
 Wire Wire Line
 	16750 9900 16750 9800
-Text Notes 17900 10150 0    50   ~ 0
-PWH-OUT
+Text Notes 17750 10150 0    50   ~ 0
+PWH-OUT (HIGH SIDE SWITCHED)
 $Comp
 L Device:Fuse F2
 U 1 1 5BEDB218
@@ -3572,74 +3572,9 @@ AD9
 Text GLabel 1750 4950 0    60   Input ~ 0
 PWR
 Wire Wire Line
-	14800 6400 15050 6400
-Wire Wire Line
 	14450 5450 14450 7450
-Wire Wire Line
-	15050 6300 15050 6000
-Wire Wire Line
-	15050 6000 14800 6000
-Wire Wire Line
-	14550 6000 14550 6200
-$Comp
-L Jumper:SolderJumper_3_Bridged123 JP6
-U 1 1 5C84A0FF
-P 15100 5750
-F 0 "JP6" V 15146 5818 50  0000 L CNN
-F 1 "SolderJumper_3_Bridged123" V 15055 5818 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 15100 5750 50  0001 C CNN
-F 3 "~" H 15100 5750 50  0001 C CNN
-	1    15100 5750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	14550 6200 14650 6200
-$Comp
-L Jumper:SolderJumper_3_Bridged123 JP1
-U 1 1 5C7C38D3
-P 14800 6200
-F 0 "JP1" V 14754 6268 50  0000 L CNN
-F 1 "SolderJumper_3_Bridged123" V 14845 6268 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 14800 6200 50  0001 C CNN
-F 3 "~" H 14800 6200 50  0001 C CNN
-	1    14800 6200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15100 5550 14950 5550
-Wire Wire Line
-	14950 5550 14950 5850
-Wire Wire Line
-	14950 5850 14750 5850
-Wire Wire Line
-	14750 5850 14750 6400
-Wire Wire Line
-	14750 6400 14800 6400
-Connection ~ 14800 6400
-Wire Wire Line
-	15100 5950 15100 6000
-Wire Wire Line
-	15100 6000 15050 6000
-Connection ~ 15050 6000
-$Comp
-L Jumper:SolderJumper_3_Bridged123 JP7
-U 1 1 5C9D3331
-P 15400 5750
-F 0 "JP7" V 15354 5818 50  0000 L CNN
-F 1 "SolderJumper_3_Bridged123" V 15445 5818 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 15400 5750 50  0001 C CNN
-F 3 "~" H 15400 5750 50  0001 C CNN
-	1    15400 5750
-	0    1    1    0   
-$EndComp
-Text GLabel 15500 5950 2    50   Input ~ 0
+Text GLabel 15050 6400 0    50   Input ~ 0
 GND
-Text GLabel 15500 5550 2    50   Input ~ 0
-12V
-Wire Wire Line
-	15400 5550 15500 5550
-Wire Wire Line
-	15400 5950 15500 5950
 $Comp
 L Transistor_BJT:BC547 Q10
 U 1 1 5C8E90A5
@@ -3683,7 +3618,7 @@ L Regulator_Linear:LM78M05_TO252 U1
 U 1 1 5C957EA1
 P 9600 6050
 F 0 "U1" H 9600 6292 50  0000 C CNN
-F 1 "L4940-5V" H 9600 6201 50  0000 C CNN
+F 1 "LD1085-5V" H 9600 6201 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9600 6275 50  0001 C CIN
 F 3 "http://www.fairchildsemi.com/ds/LM/LM78M05.pdf" H 9600 6000 50  0001 C CNN
 	1    9600 6050
@@ -3712,4 +3647,8 @@ Text GLabel 8000 12050 2    60   Input ~ 0
 ULN-BOOST
 Text GLabel 4350 4800 0    50   Input ~ 0
 ULN-BOOST
+Wire Wire Line
+	14550 6000 14550 6300
+Wire Wire Line
+	14550 6300 15050 6300
 $EndSCHEMATC
